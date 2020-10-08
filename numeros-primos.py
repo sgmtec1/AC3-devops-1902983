@@ -4,7 +4,7 @@ from math import sqrt
 
 app = Flask(__name__)
 
-@app.route('/RA190293-Sandra')
+@app.route('/')
 def nao_entre_em_panico():
     limite = 100
 
@@ -16,13 +16,14 @@ def nao_entre_em_panico():
 
     while p < limite:
         numeroprimo = 1
+        i=0
         for i in range(2, numero):
-            if numero % i = 0
-            numeroprimo = 0
-            break
+            if numero % i:
+                numeroprimo = 0
+                break
         if (numeroprimo):
             primos = primos + str(numero) + ","
-            p += 1
+            p+= 1
             if(p % 10 ==0):
                 primos = primos + "<br>"
         numero+=1
