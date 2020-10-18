@@ -1,1 +1,1 @@
-web: python numeros-primos.py
+web: python npsgm.py
